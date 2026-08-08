@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+
+:root {
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-900: hsl(24, 5%, 18%);
+  --white: hsl(0, 0%, 100%);
+ --stone-100: hsl(30, 54%, 90%);
+ --stone-600: hsl(30, 10%, 34%);
+ --brown-800:hsl(14, 45%, 36%);
+ --rose-800:hsl(332, 51%, 32%);
+ --rose-50:hsl(330, 100%, 98%);
+}
+
+
+
+*{
+    
+    font-weight: 400;
+
+}
+
+strong {
+  font-weight: 600;
+}
+
+body{
+    background-color: var(--stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+
+/* Main card : control card size */
+
+.maincontainer{
+ max-width: 736px;
+ height: auto;
+ background-color: white;
+ border-radius:20px ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+
+}
+
+/* Card content : control cards contents and how tehy are arranged */
+
+.cardcontent{
+    width:100%;
+    padding: 2em;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items:flex-start;
+     font-family: 'Young Serif', serif;
+     h1{
+        margin-top: 2 rem;
+        margin-bottom: 0.5rem;
+     }
+
+     p{
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        font-family: 'outfit';
+        letter-spacing: 0.05em;
+        color: var(--stone-600);
+        
+     }
+
+
+}
+
+
+
+
+
+img {
+  max-width:100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+
+
+/* preptime box */
+.preptime{
+
+    background-color: var(--rose-50);
+    width:100%;
+    padding :0.5em 2em;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: rgb(67, 66, 66);
+
+}
+
+.preptime h3{
+        color: var(--rose-800);
+        margin-top: 0.75rem;
+        margin-bottom: 1rem;
+        font-family: 'Outfit';
+        font-weight: 600;
+        
+    }
+
+.preptime  ul{
+        padding-left: 1.5rem;
+        font-family: 'outfit';
+       
+    }
+
+
+.preptime li{
+        margin-bottom: 1em;
+        
+    }
+
+.preptime ul li {
+  /* position: relative; */
+    padding-left: 1rem; /* Increase this value to add more spacing */
+}
+
+.preptime ul li::marker{
+    color:var(--rose-800);
+}
+
+
+
+/* Ingredients */
+
+
+ h2{
+    color: var(--rose-800);
+    }
+
+
+.ingredients ul{
+    padding-left: 2rem;
+    font-family: 'outfit';
+    letter-spacing: 0.05em;
+    color: var(--stone-600);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+
+    li{
+        padding-left: 1.5rem;
+        margin-bottom: 1em;
+    }
+
+    li::marker{
+        color: var(--rose-800);
+    }
+}
+
+
+
+hr{
+    display: block;
+    width: 100%;
+    border : 1rem;
+    border-bottom: 0.5px solid var(--stone-600);
+    
+}
+
+
+/* instructions */
+
+
+.instructions ol{
+
+    padding-left: 2rem;
+    font-family: 'outfit';
+    letter-spacing: 0.05em;
+    color: var(--stone-600);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    li{
+        padding-left: 1.5rem;
+        margin-bottom: 1em;
+        
+
+    }
+
+    li::marker{
+        font-weight: 900;
+        color: var(--rose-800);
+    }
+
+}
+
+
+
+/* Nutrition */
+
+table{
+    font-family: 'outfit';
+    width: 100%;
+    padding-left: 1rem;
+    border-collapse: collapse;
+    color: var(--stone-600);
+
+    tr td{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        text-align: left;
+        border-bottom: 1px solid var(--stone-150);
+
+    }
+
+    tr td:nth-child(2){
+        color: var(--rose-800);
+        font-weight: 800;
+    }
+}
+
+.nutrition p{
+    margin-bottom: 1rem;
+}
+
+
+
+@media (max-width:375px) {
+.maincontainer{
+ max-width: 375px;
+}
+}
